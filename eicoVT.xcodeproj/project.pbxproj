@@ -100,6 +100,11 @@
 		44871D20203A0DC90074C812 /* extension(LocalizerSetting) + checkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44871D1F203A0DC90074C812 /* extension(LocalizerSetting) + checkSettings.swift */; };
 		44871D24203C15840074C812 /* Graphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44871D23203C15840074C812 /* Graphic.swift */; };
 		44871D26203E1C400074C812 /* PFTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44871D25203E1C400074C812 /* PFTeam.swift */; };
+		950B3F372047593200DBA16F /* ViewControllerMain2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950B3F362047593200DBA16F /* ViewControllerMain2.swift */; };
+		950B3F3920475F7900DBA16F /* LocalizerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950B3F3820475F7900DBA16F /* LocalizerManager.swift */; };
+		950B3F3B2047609100DBA16F /* PFComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950B3F3A2047609100DBA16F /* PFComment.swift */; };
+		950B3F3D2047642600DBA16F /* PFPatient0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950B3F3C2047642600DBA16F /* PFPatient0.swift */; };
+		950B3F3F204768CC00DBA16F /* CollectionViewCellGalaxyExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950B3F3E204768CC00DBA16F /* CollectionViewCellGalaxyExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -198,6 +203,11 @@
 		44871D1F203A0DC90074C812 /* extension(LocalizerSetting) + checkSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "extension(LocalizerSetting) + checkSettings.swift"; sourceTree = "<group>"; };
 		44871D23203C15840074C812 /* Graphic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graphic.swift; sourceTree = "<group>"; };
 		44871D25203E1C400074C812 /* PFTeam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PFTeam.swift; sourceTree = "<group>"; };
+		950B3F362047593200DBA16F /* ViewControllerMain2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMain2.swift; sourceTree = "<group>"; };
+		950B3F3820475F7900DBA16F /* LocalizerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizerManager.swift; sourceTree = "<group>"; };
+		950B3F3A2047609100DBA16F /* PFComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PFComment.swift; sourceTree = "<group>"; };
+		950B3F3C2047642600DBA16F /* PFPatient0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PFPatient0.swift; sourceTree = "<group>"; };
+		950B3F3E204768CC00DBA16F /* CollectionViewCellGalaxyExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellGalaxyExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -518,6 +528,7 @@
 				4441E45A202845C5006171F6 /* ViewControllerLogin.swift */,
 				4441E45C202845D2006171F6 /* ViewControllerRegister.swift */,
 				4441E45E202845E1006171F6 /* ViewControllerForgotPassword.swift */,
+				950B3F362047593200DBA16F /* ViewControllerMain2.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -525,6 +536,7 @@
 		958238182044A71500155708 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				950B3F3E204768CC00DBA16F /* CollectionViewCellGalaxyExample.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -546,7 +558,10 @@
 		9582381B2044A71600155708 /* Modals */ = {
 			isa = PBXGroup;
 			children = (
+				950B3F3C2047642600DBA16F /* PFPatient0.swift */,
+				950B3F3A2047609100DBA16F /* PFComment.swift */,
 				44871D25203E1C400074C812 /* PFTeam.swift */,
+				950B3F3820475F7900DBA16F /* LocalizerManager.swift */,
 			);
 			path = Modals;
 			sourceTree = "<group>";
@@ -647,12 +662,15 @@
 				4441E40C2023A8D0006171F6 /* ECLocalizer - Part.swift in Sources */,
 				4441E471202ADA0F006171F6 /* ECLocalizer - Team.swift in Sources */,
 				4441E4172023B4E7006171F6 /* ECData.swift in Sources */,
+				950B3F3920475F7900DBA16F /* LocalizerManager.swift in Sources */,
 				4441E494202DA406006171F6 /* Subclass - Semiology.swift in Sources */,
 				4441E4132023B487006171F6 /* ECData - File.swift in Sources */,
 				4441E476202C5D4F006171F6 /* TableViewCellComment.swift in Sources */,
 				4441E40A2023A8C7006171F6 /* ECLocalizer - Subpart.swift in Sources */,
+				950B3F3D2047642600DBA16F /* PFPatient0.swift in Sources */,
 				4441E4B32034ED82006171F6 /* TableViewCellSettingString.swift in Sources */,
 				4441E3FA2023A87F006171F6 /* asupprimer.swift in Sources */,
+				950B3F3B2047609100DBA16F /* PFComment.swift in Sources */,
 				443984FE2036BD0F00E650D3 /* TableViewCellSettingList.swift in Sources */,
 				4441E4112023AEA8006171F6 /* Support file.swift in Sources */,
 				4441E467202870AE006171F6 /* ViewControllerSubclass.swift in Sources */,
@@ -671,6 +689,7 @@
 				4441E43720267125006171F6 /* TableViewCellRecord.swift in Sources */,
 				4441E42E2024524D006171F6 /* ECLocalizer - Entity.swift in Sources */,
 				4441E4A52031C491006171F6 /* extension(Main) + QueryTeam.swift in Sources */,
+				950B3F372047593200DBA16F /* ViewControllerMain2.swift in Sources */,
 				4441E490202D8C97006171F6 /* extension(Main) + Load.swift in Sources */,
 				4441E41B2023B8FE006171F6 /* Subclass - Record.swift in Sources */,
 				4441E481202D7AC4006171F6 /* TableViewCellSemiology.swift in Sources */,
@@ -694,6 +713,7 @@
 				44871D1920379A2E0074C812 /* CollectionViewCellSettingList.swift in Sources */,
 				4441E43120249134006171F6 /* TableViewCellFile.swift in Sources */,
 				4441E489202D7E01006171F6 /* TableViewCellAgora.swift in Sources */,
+				950B3F3F204768CC00DBA16F /* CollectionViewCellGalaxyExample.swift in Sources */,
 				4441E46D202A5E66006171F6 /* extension(Main) + Queries.swift in Sources */,
 				4441E465202860A7006171F6 /* ViewControllerMain.swift in Sources */,
 				4441E4252023C2E2006171F6 /* TableViewCellMeasure.swift in Sources */,

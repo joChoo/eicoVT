@@ -36,7 +36,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.initialize(with: configuration)
         checkStoryboardMode()
         PFTeam.registerSubclass()
-            
+        PFComment.registerSubclass()
+        PFPatient0.registerSubclass()
         
         
         // Override point for customization after application launch.
@@ -86,8 +87,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         appD.window!.rootViewController = loginVC
-        
-        //self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func exitLoginMode(){

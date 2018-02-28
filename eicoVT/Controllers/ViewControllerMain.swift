@@ -32,39 +32,7 @@ class ViewControllerMain: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var textviewComment: UITextView!
     @IBOutlet weak var textfieldSearch: UITextField!
-    
-    @IBAction func buttonImportPressed(_ sender: Any) {
-        let alertController = UIAlertController(
-            title: "IMPORT FILES",
-            message: "What type of data do you import ?",
-            preferredStyle: .actionSheet)
-        alertController.popoverPresentationController?.sourceRect = buttonImport.frame
-        alertController.popoverPresentationController?.sourceView = self.view
-        let fileDataButton = UIAlertAction(
-            title: "File (.jpg, .stl)",
-            style: .default,
-            handler: { (action) -> Void in
-                print("Import File")
-        })
-        let rawDataButton = UIAlertAction(
-            title: "Raw datas (.csv, .dcm)",
-            style: .default,
-            handler: { (action) -> Void in
-                print("Raw datas")
-        })
-        let cancelButton = UIAlertAction(
-            title: "Cancel",
-            style: .cancel,
-            handler: { (action) -> Void in
-                print("Cancel button tapped")
-        })
-        alertController.addAction(fileDataButton)
-        alertController.addAction(rawDataButton)
-        alertController.addAction(cancelButton)
-        self.present(alertController, animated: true, completion: nil)
-        
-    }
-    
+
     //==============================================================================
     // TABLES DATASOURCE
     //==============================================================================
@@ -77,7 +45,6 @@ class ViewControllerMain: UIViewController, UITableViewDelegate, UITableViewData
     var navSections:[String] = ["Parent", "Brothers", "Children"]
     var navigationLists:[[ECLocalizer]] = [[],[],[]]
     
-    
     // Datas Table
     
     var datasSections:[String] = ["Alert","Watch","datasList"] // watch - lookout - oversight - control - guard
@@ -88,17 +55,30 @@ class ViewControllerMain: UIViewController, UITableViewDelegate, UITableViewData
     // CONTROL
     //==============================================================================
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        initData()
+        initUI()
+        
+
+        
+    }
+    
+    
+    func initData(){
         
         if currentLocalizer == nil {
             currentLocalizer = Nexus()
         }
         
-        localizerNeedsDisplay()
-        loadNibFiles(of: currentLocalizer)
-        
+        // Import datas
+        //queryRecords()
+        queryLocalizer(localizer: currentLocalizer)
+
+    }
+    
+    func initUI(){
         // Set delegates and datasources for tableviews
         
         tableDatas.delegate = self
@@ -107,12 +87,10 @@ class ViewControllerMain: UIViewController, UITableViewDelegate, UITableViewData
         tableDatas.dataSource = self
         tableNavigation.dataSource = self
         
-        // Import datas
-        queryLocalizer(localizer: currentLocalizer)
-        //queryRecords()
-        
-        
-        
+        loadNibFiles(of: currentLocalizer)
+        localizerNeedsDisplay()
+
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -259,6 +237,38 @@ class ViewControllerMain: UIViewController, UITableViewDelegate, UITableViewData
         tableNavigation.reloadData()
         tableDatas.reloadData()
         
+    }
+    
+    
+    @IBAction func buttonImportPressed(_ sender: Any) {
+        let alertController = UIAlertController(
+            title: "IMPORT FILES",
+            message: "What type of data do you import ?",
+            preferredStyle: .actionSheet)
+        alertController.popoverPresentationController?.sourceRect = buttonImport.frame
+        alertController.popoverPresentationController?.sourceView = self.view
+        let fileDataButton = UIAlertAction(
+            title: "File (.jpg, .stl)",
+            style: .default,
+            handler: { (action) -> Void in
+                print("Import File")
+        })
+        let rawDataButton = UIAlertAction(
+            title: "Raw datas (.csv, .dcm)",
+            style: .default,
+            handler: { (action) -> Void in
+                print("Raw datas")
+        })
+        let cancelButton = UIAlertAction(
+            title: "Cancel",
+            style: .cancel,
+            handler: { (action) -> Void in
+                print("Cancel button tapped")
+        })
+        alertController.addAction(fileDataButton)
+        alertController.addAction(rawDataButton)
+        alertController.addAction(cancelButton)
+        self.present(alertController, animated: true, completion: nil)
     }
     
     
