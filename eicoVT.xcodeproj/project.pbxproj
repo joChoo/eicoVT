@@ -245,10 +245,16 @@
 		4441E3F62023A87F006171F6 /* eicoVT */ = {
 			isa = PBXGroup;
 			children = (
+				4441E3FB2023A87F006171F6 /* Main.storyboard */,
+				4441E45820284528006171F6 /* UnauthorizedUser.storyboard */,
+				958238172044A71500155708 /* Controllers */,
+				9582381A2044A71500155708 /* Extentions */,
+				958238192044A71500155708 /* Libs */,
+				9582381B2044A71600155708 /* Modals */,
+				958238182044A71500155708 /* Views */,
 				4441E3F72023A87F006171F6 /* AppDelegate.swift */,
 				4441E4102023AEA8006171F6 /* Support file.swift */,
 				44871D23203C15840074C812 /* Graphic.swift */,
-				44871D27203E1C470074C812 /* Modals */,
 				4441E40E2023AA98006171F6 /* Views */,
 				4441E4192023B50B006171F6 /* Data Hierarchy */,
 				4441E3FE2023A87F006171F6 /* Assets.xcassets */,
@@ -284,8 +290,6 @@
 		4441E40F2023AAAA006171F6 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				4441E3FB2023A87F006171F6 /* Main.storyboard */,
-				4441E45820284528006171F6 /* UnauthorizedUser.storyboard */,
 				4441E4002023A87F006171F6 /* LaunchScreen.storyboard */,
 			);
 			name = Interface;
@@ -368,9 +372,6 @@
 		4441E460202845E7006171F6 /* UnregisteredUsers */ = {
 			isa = PBXGroup;
 			children = (
-				4441E45A202845C5006171F6 /* ViewControllerLogin.swift */,
-				4441E45C202845D2006171F6 /* ViewControllerRegister.swift */,
-				4441E45E202845E1006171F6 /* ViewControllerForgotPassword.swift */,
 			);
 			name = UnregisteredUsers;
 			path = ..;
@@ -380,10 +381,6 @@
 			isa = PBXGroup;
 			children = (
 				4441E3F92023A87F006171F6 /* asupprimer.swift */,
-				4441E466202870AE006171F6 /* ViewControllerSubclass.swift */,
-				4441E464202860A7006171F6 /* ViewControllerMain.swift */,
-				4441E478202C7748006171F6 /* ViewControllerUserSettings.swift */,
-				4441E4AD20342CA2006171F6 /* ViewControllerLocalizerSetting.swift */,
 				4441E47A202C79AE006171F6 /* Extensions */,
 				4441E4272023C2E7006171F6 /* Cells */,
 			);
@@ -511,12 +508,47 @@
 			name = Datas;
 			sourceTree = "<group>";
 		};
-		44871D27203E1C470074C812 /* Modals */ = {
+		958238172044A71500155708 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4441E466202870AE006171F6 /* ViewControllerSubclass.swift */,
+				4441E464202860A7006171F6 /* ViewControllerMain.swift */,
+				4441E478202C7748006171F6 /* ViewControllerUserSettings.swift */,
+				4441E4AD20342CA2006171F6 /* ViewControllerLocalizerSetting.swift */,
+				4441E45A202845C5006171F6 /* ViewControllerLogin.swift */,
+				4441E45C202845D2006171F6 /* ViewControllerRegister.swift */,
+				4441E45E202845E1006171F6 /* ViewControllerForgotPassword.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		958238182044A71500155708 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		958238192044A71500155708 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		9582381A2044A71500155708 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		9582381B2044A71600155708 /* Modals */ = {
 			isa = PBXGroup;
 			children = (
 				44871D25203E1C400074C812 /* PFTeam.swift */,
 			);
-			name = Modals;
+			path = Modals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

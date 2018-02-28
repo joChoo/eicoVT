@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17C88" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="ipad10_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,37 +18,19 @@
                         <viewControllerLayoutGuide type="top" id="Fwo-4d-CKS"/>
                         <viewControllerLayoutGuide type="bottom" id="Yrc-zd-ioo"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="BiN-Pm-blV">
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="BiN-Pm-blV">
                         <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8kz-iI-hdb">
-                                <rect key="frame" x="749.5" y="507" width="300" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gsW-zO-QVo">
-                                <rect key="frame" x="749.5" y="545" width="300" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="retype password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HhB-fD-IWQ">
-                                <rect key="frame" x="749.5" y="583" width="300" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHN-Qo-wet">
-                                <rect key="frame" x="749.5" y="763" width="300" height="30"/>
+                                <rect key="frame" x="471.5" y="763" width="300" height="30"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
                                     <action selector="buttonRegisterPressed:" destination="H0A-mJ-MPm" eventType="touchUpInside" id="HLK-0v-9I1"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="I0k-hA-MsO">
-                                <rect key="frame" x="749" y="320" width="300" height="29"/>
+                                <rect key="frame" x="471" y="459" width="300" height="29"/>
                                 <segments>
                                     <segment title="Clinician"/>
                                     <segment title="Academic"/>
@@ -58,16 +40,16 @@
                                 </connections>
                             </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut " textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEU-uI-Yaz">
-                                <rect key="frame" x="749" y="348" width="300" height="138"/>
+                                <rect key="frame" x="471" y="491" width="300" height="130"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="138" id="L6O-Tm-tDm"/>
+                                    <constraint firstAttribute="height" constant="130" id="L6O-Tm-tDm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7h5-KK-stI">
-                                <rect key="frame" x="749" y="30" width="300" height="30"/>
+                                <rect key="frame" x="471" y="30" width="300" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="KLV-g6-3lc"/>
                                 </constraints>
@@ -77,11 +59,29 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkd-Fe-5xn">
-                                <rect key="frame" x="749" y="279" width="300" height="21"/>
+                                <rect key="frame" x="471" y="418" width="300" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8kz-iI-hdb">
+                                <rect key="frame" x="471" y="269" width="300" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gsW-zO-QVo">
+                                <rect key="frame" x="471" y="307" width="300" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="retype password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HhB-fD-IWQ">
+                                <rect key="frame" x="471" y="345" width="300" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -89,9 +89,8 @@
                             <constraint firstItem="Yrc-zd-ioo" firstAttribute="top" secondItem="GHN-Qo-wet" secondAttribute="bottom" constant="41" id="2vh-hQ-3Jl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="7h5-KK-stI" secondAttribute="trailing" constant="43" id="64n-bb-AyR"/>
                             <constraint firstItem="hkd-Fe-5xn" firstAttribute="trailing" secondItem="7h5-KK-stI" secondAttribute="trailing" id="84a-st-Mbd"/>
-                            <constraint firstItem="8kz-iI-hdb" firstAttribute="top" secondItem="TEU-uI-Yaz" secondAttribute="bottom" constant="21" id="8WG-9T-qbM"/>
                             <constraint firstItem="I0k-hA-MsO" firstAttribute="top" secondItem="hkd-Fe-5xn" secondAttribute="bottom" constant="20" id="AHM-Qi-dO6"/>
-                            <constraint firstItem="TEU-uI-Yaz" firstAttribute="top" secondItem="I0k-hA-MsO" secondAttribute="bottom" id="DLW-5T-usX"/>
+                            <constraint firstItem="TEU-uI-Yaz" firstAttribute="top" secondItem="I0k-hA-MsO" secondAttribute="bottom" constant="4" id="DLW-5T-usX"/>
                             <constraint firstItem="gsW-zO-QVo" firstAttribute="width" secondItem="8kz-iI-hdb" secondAttribute="width" id="DQm-Xy-2mc"/>
                             <constraint firstItem="HhB-fD-IWQ" firstAttribute="top" secondItem="gsW-zO-QVo" secondAttribute="bottom" constant="8" id="KzX-P3-Jtw"/>
                             <constraint firstItem="TEU-uI-Yaz" firstAttribute="centerX" secondItem="7h5-KK-stI" secondAttribute="centerX" id="NLn-ww-eWh"/>
@@ -104,6 +103,7 @@
                             <constraint firstItem="8kz-iI-hdb" firstAttribute="width" secondItem="TEU-uI-Yaz" secondAttribute="width" id="hFy-60-hlM"/>
                             <constraint firstItem="TEU-uI-Yaz" firstAttribute="width" secondItem="hkd-Fe-5xn" secondAttribute="width" id="iWA-VU-b64"/>
                             <constraint firstItem="7h5-KK-stI" firstAttribute="top" secondItem="Fwo-4d-CKS" secondAttribute="bottom" constant="10" id="kQ7-Zg-ey7"/>
+                            <constraint firstItem="hkd-Fe-5xn" firstAttribute="top" secondItem="HhB-fD-IWQ" secondAttribute="bottom" constant="43" id="kcz-lF-Rl0"/>
                             <constraint firstItem="GHN-Qo-wet" firstAttribute="centerX" secondItem="HhB-fD-IWQ" secondAttribute="centerX" id="nsw-Hw-pJt"/>
                             <constraint firstItem="HhB-fD-IWQ" firstAttribute="centerX" secondItem="gsW-zO-QVo" secondAttribute="centerX" id="oSU-pv-MX4"/>
                             <constraint firstItem="TEU-uI-Yaz" firstAttribute="centerY" secondItem="BiN-Pm-blV" secondAttribute="centerY" id="sKx-6L-fd9"/>
@@ -144,7 +144,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x8n-Bw-9cN">
                                 <rect key="frame" x="803" y="402" width="271" height="30"/>
@@ -153,7 +153,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npK-Kc-LSe">
                                 <rect key="frame" x="803" y="444" width="271" height="30"/>

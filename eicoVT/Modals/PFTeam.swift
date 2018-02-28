@@ -65,18 +65,19 @@ final class PFTeam: PFObject, PFSubclassing {
     
 }
 
-
-func test(){
-    
-    PFTeam.getTeamFromCurrentUser { (succeed, teams) in
-        if succeed == true {
-            for team in teams{
-                let newTeam = Team(title: <#T##String#>, subtitle: <#T##String#>, description: <#T##String#>)
-        }
-    }
-}
-
-
+//
+//func test(){
+//    
+//    PFTeam.getTeamFromCurrentUser { (succeed, teams) in
+//        if succeed == true {
+////            for team in teams{
+////            }
+//               // let newTeam = Team(title: <#T##String#>, subtitle: <#T##String#>, description: <#T##String#>)
+//        }
+//    }
+//}
+//
+//
 
 
 
